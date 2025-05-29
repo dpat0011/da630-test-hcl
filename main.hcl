@@ -1,10 +1,8 @@
-resource "lab" "main" {
-  title = "DA630 (Distributed Systems and Transactions)"
-  description = <<-EOF
-  Welcome!
-  EOF
+resource "lab" "container_terminal" {
+    title = "Container Terminal"
+    description = "Lets see where description if formatted"
 
-settings {
+    settings {
         idle {
             enabled = false
         }
@@ -12,6 +10,7 @@ settings {
 
     layout "single_column" {
         default = true
+        # do i need the following line if the outer most layout has this already?
         reference = resource.layout.single_panel
 
         tab "terminal" {
