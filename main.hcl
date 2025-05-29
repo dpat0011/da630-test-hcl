@@ -1,8 +1,7 @@
 resource "lab" "main" {
-  title = "Skeleton Lab"
+  title = "DA630 (Distributed Systems and Transactions)"
   description = <<-EOF
-  This is the Skeleton Lab.
-  You can use this as a minimal starting point for developing labs.
+  Welcome!
   EOF
 
   layout "single_column" {
